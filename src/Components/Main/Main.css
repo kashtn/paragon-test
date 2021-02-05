@@ -1,0 +1,61 @@
+.container {
+  width: 95vw;
+  height: 600px;
+  margin: 200px auto 0 auto;
+  background-color: #ccc;
+  border-radius: 10px;
+  position: relative;
+}
+.datesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40%;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: space-around;
+  height: 10%;
+  margin: 0 auto;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+}
+button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+.twilightContainer {
+  height: 50%;
+}
+.gradient {
+  width: 95%;
+  height: 15%;
+  margin: 0 auto;
+}
+.loader {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid rgb(25, 1, 67);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
